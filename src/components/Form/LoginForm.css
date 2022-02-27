@@ -1,0 +1,36 @@
+.login-form {
+  display: flex;
+  align-items: center;
+  border: 1px solid green;
+  margin: 10em;
+  flex-direction: column;
+}
+
+.form-title {
+  text-align: center;
+  font-size: larger;
+}
+
+.form-label {
+  margin: 1em 0;
+  align-self: flex-start;
+}
+
+.form-input input {
+  background-color: black;
+  border: 1px solid green;
+  border-radius: 2px;
+}
+
+.submit {
+  margin: 1em 0;
+  text-align: center;
+}
+
+.submit button {
+  all: unset;
+  background-color: black;
+  color: white;
+  border: 1px solid green;
+  padding: 0.5em;
+}

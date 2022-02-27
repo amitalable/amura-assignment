@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Login from "./pages/Login/Login";
+import Search from "./pages/Search/Search";
+import IdCard from "./pages/IdCard/IdCard";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Navigate replace to="/login" />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/search" element={<Search />} />
+        <Route path="/idcard/:person" element={<IdCard />} />
+      </Routes>
+
+      {/* <Login /> */}
+      {/* <Search /> */}
+      {/* <IdCard
+        title="Manidhar Profile"
+        person={{ name: "Manidhar", img: "MS" }}
+      /> */}
+    </Router>
   );
 }
 

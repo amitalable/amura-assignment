@@ -1,0 +1,44 @@
+.search {
+  margin: 10em;
+}
+
+.filter {
+  display: flex;
+}
+
+.filter div {
+  margin: 0em 1em;
+}
+
+.arrow-keys {
+  display: flex;
+  border: 1px solid green;
+  padding: 0.1em 0em;
+}
+
+input {
+  all: unset;
+  border: 1px solid green;
+  padding: 0.2em;
+}
+
+.upward {
+  cursor: pointer;
+}
+
+.downward {
+  cursor: pointer;
+}
+
+.reset {
+  border: 1px solid green;
+  padding: 0.2em 1em;
+  cursor: pointer;
+}
+
+.data {
+  margin: 2em 2em 2em 0;
+  padding: 1em 1em 1em 0;
+  color: white;
+  border: 1px solid green;
+}

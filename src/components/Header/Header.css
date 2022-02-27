@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  position: fixed;
+  height: 5em;
+  width: 100%;
+  color: green;
+  top: 0;
+}
+
+.back-arrow {
+  margin: 2em;
+  cursor: pointer;
+}
+
+.header-title {
+  margin: 2em 0.5em;
+  font-weight: bolder;
+}
